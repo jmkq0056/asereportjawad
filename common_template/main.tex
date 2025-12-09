@@ -1,0 +1,183 @@
+\documentclass[a4paper,12pt,english,cph,openright]{aau}
+
+% ============================================================================
+% PACKAGES
+% ============================================================================
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+
+% Margins
+\usepackage[left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm]{geometry}
+
+% Line spacing
+\usepackage{setspace}
+\onehalfspacing
+
+% Graphics and figures
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{subfig}
+\usepackage{float}
+
+% Tables
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{colortbl}
+
+% Lists
+\usepackage{enumitem}
+\usepackage{paralist}
+\setlist[itemize]{label=\small\textbullet}
+
+% Math
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% Links and references - CLICKABLE
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=false,
+    linkcolor=black,
+    filecolor=black,
+    urlcolor=blue,
+    citecolor=black,
+    pdftitle={Agile Software Engineering - Exam Assignment},
+    pdfauthor={Your Name},
+    bookmarks=true,
+    bookmarksnumbered=true,
+    pdfpagemode=UseOutlines,
+}
+
+% Bibliography with BibLaTeX
+\usepackage[style=authoryear,backend=biber,sorting=nty]{biblatex}
+\addbibresource{references.bib}
+
+% Table of contents depth
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+
+% Code listings
+\usepackage{listings}
+% JavaScript definition
+\lstdefinelanguage{JavaScript}{
+    keywords={get, typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break, const, let, use, express, static, join, require, asyncHandler, log},
+    keywordstyle=\color{magenta},
+    ndkeywords={class, export, boolean, throw, implements, import, this, async, await},
+    ndkeywordstyle=\color{blue}\bfseries,
+    identifierstyle=\color{black},
+    sensitive=false,
+    basicstyle=\footnotesize\ttfamily,
+    comment=[l]{//},
+    morecomment=[s]{/*}{*/},
+    commentstyle=\color{mGreen},
+    numberstyle=\tiny\color{mGray},
+    stringstyle=\color{mPurple},
+    morestring=[b]',
+    morestring=[b]",
+    breaklines=true
+}
+
+% Todo notes (useful during writing)
+\usepackage{todonotes}
+
+% Caption styling
+\usepackage[font=small,labelfont=bf]{caption}
+
+% Prevent text overflow
+\usepackage{microtype}
+\setlength{\emergencystretch}{3em}
+\tolerance=5000
+
+% URL handling
+\usepackage{url}
+
+% ============================================================================
+% DOCUMENT METADATA - EDIT THIS SECTION
+% ============================================================================
+\title{Agile Software Engineering}
+\author{Your Name Here}
+\studentnumber{20XXXXXX}
+\studentemail{xxxx@student.aau.dk}
+
+\intervieweename{Interviewee Name}
+\intervieweecompany{Company Name}
+\intervieweeemail{interviewee@company.com}
+
+\projectperiod{2025}
+\coursename{Agile Software Engineering}
+\coursecode{ASE}
+\semester{Fall 2025}
+
+% Optional: Add supervisor if applicable
+% \supervisor{Supervisor Name}
+
+% Optional: Add synopsis
+\synopsis{
+This report analyzes the implementation of Agile principles in practice through an interview-based case study. The purpose is to evaluate how Agile methodologies are applied in real-world software development projects and understand their impact on project success. The analysis focuses on examining development processes, stakeholder management, team dynamics, and continuous improvement strategies within an Agile framework.
+
+Through systematic analysis of interview data and theoretical frameworks, this report identifies key success factors, challenges, and recommendations for improving Agile practices in professional software development environments.
+}
+
+% ============================================================================
+% DOCUMENT START
+% ============================================================================
+\begin{document}
+
+% Cover page
+\maketitle
+
+% Frontmatter (Roman numerals for page numbers)
+\frontmatter
+
+% Synopsis/metadata page
+\makesynopsispage
+
+% Table of Contents
+\tableofcontents
+\clearpage
+
+% Optional: List of Figures
+% \listoffigures
+% \clearpage
+
+% Optional: List of Tables
+% \listoftables
+% \clearpage
+
+% Main content (Arabic numerals for page numbers)
+\mainmatter
+
+% Remove paragraph indentation (optional, for modern look)
+\setlength\parindent{0pt}
+
+% ============================================================================
+% CHAPTERS - Include your chapter files here
+% ============================================================================
+
+\include{chapters/01_introduction}
+\include{chapters/02_problem_identification}
+\include{chapters/03_agile_solutions}
+\include{chapters/04_agile_evaluation}
+\include{chapters/05_stakeholder_mapping}
+\include{chapters/06_software_quality}
+\include{chapters/07_production_pipeline}
+\include{chapters/08_conclusion}
+
+% ============================================================================
+% BIBLIOGRAPHY
+% ============================================================================
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{Bibliography}
+\printbibliography[heading=bibintoc,title={Bibliography}]
+
+% ============================================================================
+% APPENDIX
+% ============================================================================
+\cleardoublepage
+\appendix
+\include{chapters/appendix}
+
+\end{document}
