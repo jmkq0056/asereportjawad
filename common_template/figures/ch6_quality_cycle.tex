@@ -1,0 +1,51 @@
+% Figure: Quality Management Framework
+% In-depth view showing how quality practices interconnect
+
+\begin{figure}[htbp]
+    \centering
+    \begin{tikzpicture}[
+        component/.style={rectangle, rounded corners, draw, fill=blue!15, text width=2.8cm, align=center, minimum height=1.2cm, font=\small},
+        metric/.style={rectangle, rounded corners, draw, fill=green!15, text width=2.5cm, align=center, minimum height=1cm, font=\scriptsize},
+        tool/.style={rectangle, draw, fill=orange!20, text width=2.5cm, align=center, minimum height=1cm, font=\scriptsize},
+        arrow/.style={->, >=stealth, thick}
+    ]
+
+    % Top layer - Tools
+    \node[tool] (devops) at (0,5) {Azure DevOps\\Pipeline};
+    \node[tool] (jira) at (3.5,5) {Jira\\Work Tracking};
+    \node[tool] (teams) at (7,5) {Teams\\Communication};
+
+    % Middle layer - Practices
+    \node[component] (tests) at (0,3) {Automated\\Testing\\Unit + Integration};
+    \node[component] (review) at (3.5,3) {Code\\Review\\Peer Approval};
+    \node[component] (dod) at (7,3) {Definition\\of Done\\Quality Gates};
+
+    % Lower layer - Environments
+    \node[component, fill=purple!15] (dev) at (1.75,0.8) {Dev\\Environment};
+    \node[component, fill=purple!15] (test) at (5.25,0.8) {Test\\Environment};
+
+    % Bottom - Production
+    \node[component, fill=red!20] (prod) at (3.5,-0.8) {Production\\Members};
+
+    % Connections
+    \draw[arrow, blue] (devops) -- (tests);
+    \draw[arrow, blue] (jira) -- (review);
+    \draw[arrow, blue] (teams) -- (dod);
+
+    \draw[arrow, green!60!black] (tests) -- (dev);
+    \draw[arrow, green!60!black] (review) -- (test);
+    \draw[arrow, green!60!black] (dod) -- ++(0,-1.4) -- (test);
+
+    \draw[arrow, red] (dev) -- (prod);
+    \draw[arrow, red] (test) -- (prod);
+
+    % Feedback loop
+    \draw[arrow, dashed, orange, very thick] (prod) -- ++(-6,0) -- ++(0,4.5) -- (devops);
+
+    % Labels
+    \node[right=0.2cm of prod, font=\scriptsize, text width=2cm] {Feedback\\from members};
+
+    \end{tikzpicture}
+    \caption{Quality management across tools, practices, and environments. Azure DevOps runs automated tests, Jira tracks work items, and Teams handles communication. Code moves through dev and test environments before reaching production. Member feedback loops back to inform improvements.}
+    \label{fig:jawad-quality-cycle}
+\end{figure}

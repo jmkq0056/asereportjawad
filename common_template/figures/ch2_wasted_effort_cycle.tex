@@ -1,0 +1,41 @@
+% Figure: Wasted Effort Cycle - Vertical layout with side return loop
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    step/.style={rectangle, rounded corners, draw, fill=blue!15, text width=4.5cm, align=center, minimum height=1cm, font=\small},
+    problem/.style={rectangle, rounded corners, draw, fill=red!20, text width=4.5cm, align=center, minimum height=1cm, font=\small},
+    arrow/.style={->, >=stealth, thick},
+    label/.style={font=\scriptsize, text width=2.5cm, align=center}
+]
+
+% Vertical flow (top to bottom)
+\node[step] (request) at (0,6) {Request arrives from business};
+\node[step] (start) at (0,4) {Developer starts work (seems simple)};
+\node[problem] (discover) at (0,2) {Hidden blocker discovered (week 2-3)};
+\node[problem] (abandon) at (0,0) {Work abandoned (2-4 weeks wasted)};
+
+% Arrows going down
+\draw[arrow, blue] (request.south) -- (start.north) 
+    node[midway, right, label, text=blue] {No refinement};
+\draw[arrow, blue] (start.south) -- (discover.north) 
+    node[midway, right, label, text=blue] {No feasibility check};
+\draw[arrow, red, thick] (discover.south) -- (abandon.north) 
+    node[midway, right, label, text=red] {Late discovery};
+
+% Return loop on the left side
+\draw[arrow, red, thick, dashed] (abandon.west) -- (-3,0) -- (-3,6) -- (request.west)
+    node[midway, left, label, text=red] {No learning\\Pattern repeats};
+
+% Problem examples on the right - moved further right with darker color
+\node[font=\scriptsize, text=black!70, text width=3cm, align=left] at (5.5,3) {
+    \textbf{Common blockers:}\\[0.5ex]
+    • GDPR approval\\
+    • Security access\\
+    • Legacy issues\\
+    • Vendor dependencies
+};
+
+\end{tikzpicture}
+\caption{Wasted effort cycle before Scrum adoption. Work requests arrived without refinement or feasibility checks, developers started tasks that seemed simple, hidden blockers emerged late in development, and work was abandoned after 2-4 weeks of effort. Without retrospectives or process changes, this pattern repeated continuously.}
+\label{fig:jawad-wasted-effort-cycle}
+\end{figure}

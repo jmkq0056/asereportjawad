@@ -1,19 +1,28 @@
-\chapter{Software Quality and Technology Integration}
+\chapter{Maintaining Software Quality}
 \label{ch:software-quality}
 
-\section{Quality Management}
-\label{sec:quality-management}
+Quality became a shared responsibility as Djøf Trade Union adopted Agile practices. Rather than relying on end-of-cycle testing, they built quality checks into every development step. Tests run automatically, code reviews happen before merge, and features deploy to multiple environments.
 
-% Your content here
+\section{Automated Testing and Code Reviews}
+\label{sec:automated-testing}
 
+Djøf Trade Union uses Azure DevOps pipelines to catch problems early. When developers finish a feature, they push code to a branch \textbf{(Transcript: 00:12:52--00:13:22)}. The pipeline runs unit tests, integration tests, and end-to-end tests immediately. Failed tests notify developers right away.
 
-\section{Technology Opportunities}
-\label{sec:technology-opportunities}
+Code reviews add another quality layer. A colleague must review every pull request before merge \textbf{(Transcript: 00:13:22)}. Their Definition of Done makes quality concrete: code reviewed, tests passing, deployed to staging, and validated \textbf{(Transcript: 00:18:37)}.
 
-% Your content here
+Bugs still appear. When they do, they fix them immediately without estimation. If too many bugs arrive in one sprint, they reduce feature commitments for the next sprint.
 
+\input{figures/ch6_quality_cycle}
 
-\section{Tools and Practices}
-\label{sec:tools-practices}
+\section{Legacy Systems and Feedback Integration}
+\label{sec:legacy-feedback}
 
-% Your content here
+Legacy code presents ongoing challenges. Some systems lack documentation, making changes difficult \textbf{(Transcript: 00:16:07)}. The team isolates new code from legacy systems where possible.
+
+The pipeline improved over time. Manual deployments evolved into automated stages. Developers deploy to dev, then test, then production \textbf{(Transcript: 00:13:22)}. Each environment catches different problems.
+
+Azure DevOps manages the build pipeline and testing automation. Teams handles daily communication, and Jira tracks work items \textbf{(Transcript: 00:19:22)}.
+
+Sprint reviews and quarterly demos provide quality feedback from stakeholders \textbf{(Transcript: 00:20:37--00:21:07)}. The Product Owner gathers member feedback through newsletters and brings it back to the team.
+
+Quality improved through consistent practices. Automated tests, code reviews, multiple deployment stages, and regular feedback work together to catch problems before production.

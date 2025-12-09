@@ -1,0 +1,39 @@
+% Figure: Problem Workflow - Before Scrum Adoption
+% Simple narrative flow showing how work arrived chaotically
+
+\begin{figure}[htbp]
+    \centering
+    \begin{tikzpicture}[
+        box/.style={rectangle, draw, fill=blue!10, text width=2.8cm, align=center, minimum height=1cm, font=\small},
+        problem/.style={rectangle, draw, fill=red!20, text width=2.8cm, align=center, minimum height=1cm, font=\small},
+        arrow/.style={->, >=stealth, thick}
+    ]
+
+    % Top section - Business requests
+    \node[box] (business1) at (0,4) {Business Request 1\\(GDPR unclear)};
+    \node[box] (business2) at (3.5,4) {Business Request 2\\(No priority)};
+    \node[box] (business3) at (7,4) {Business Request 3\\(Legacy constraints)};
+
+    % Middle - Direct to developers (the problem)
+    \node[problem] (devs) at (3.5,2) {Development Team\\(Overwhelmed)};
+
+    % Arrows showing chaotic flow
+    \draw[arrow, red] (business1) -- (devs);
+    \draw[arrow, red] (business2) -- (devs);
+    \draw[arrow, red] (business3) -- (devs);
+
+    % Bottom - Outcomes
+    \node[problem] (waste) at (1,0) {Wasted Effort\\(2-4 weeks lost)};
+    \node[problem] (unclear) at (6,0) {Unclear Requirements\\(Late discovery)};
+
+    \draw[arrow, red, dashed] (devs) -- (waste);
+    \draw[arrow, red, dashed] (devs) -- (unclear);
+
+    % Labels
+    \node[above=0.1cm of business2, font=\small\bfseries] {Ad-hoc Work Arrival};
+    \node[left=0.3cm of devs, font=\scriptsize, text=red, text width=1.8cm, align=right] {No filtering\\No priority\\No refinement};
+
+    \end{tikzpicture}
+    \caption{Chaotic work arrival before Scrum adoption. Business requests flowed directly to developers without proper refinement, prioritization, or feasibility analysis, leading to wasted effort and late discovery of blockers.}
+    \label{fig:jawad-problem-workflow}
+\end{figure}

@@ -2,7 +2,7 @@ INTERVIEW - AGILE SOFTWARE ENGINEERING
 AAU København, Efterår 2025
 
 Interviewer: Jawad
-Interviewperson: Erfaren softwareudvikler (10-12 års erfaring)
+Interviewperson: Ahmed Sadiq Erfaren softwareudvikler (10-12 års erfaring)
 Organisation: Fagforening (intern udviklingsafdeling)
 
 ═══════════════════════════════════════════════════════════════════

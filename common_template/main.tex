@@ -7,42 +7,51 @@
 \usepackage[english]{babel}
 \usepackage[T1]{fontenc}
 
-% Margins
+% MODERN FONT - Palatino-style serif for elegant readability
+\usepackage{palatino}
+\usepackage{mathpazo}
+
+% Margins - COMPACT LAYOUT
 \usepackage[left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm]{geometry}
 
-% Line spacing
+% Line spacing - SINGLE SPACED
 \usepackage{setspace}
-\onehalfspacing
+\singlespacing
 
 % Graphics and figures
 \usepackage{graphicx}
 \usepackage{wrapfig}
 \usepackage{subfig}
 \usepackage{float}
+\usepackage{tikz}
+\usetikzlibrary{positioning,shapes,arrows,calc}
 
-% Tables
+% Tables - MINIMAL STYLE
 \usepackage{tabularx}
 \usepackage{booktabs}
 \usepackage{multirow}
 \usepackage{colortbl}
+\setlength{\heavyrulewidth}{1.2pt}
+\setlength{\lightrulewidth}{0.5pt}
 
-% Lists
+% Lists - MINIMAL STYLE WITH DASHES
 \usepackage{enumitem}
 \usepackage{paralist}
-\setlist[itemize]{label=\small\textbullet}
+\setlist[itemize]{label=\textendash, itemsep=2pt, leftmargin=1.5em}
+\setlist[enumerate]{itemsep=2pt}
 
 % Math
 \usepackage{amsmath}
 \usepackage{amssymb}
 
-% Links and references - CLICKABLE
+% Links and references - SUBTLE COLORED LINKS
 \usepackage{hyperref}
 \hypersetup{
-    colorlinks=false,
-    linkcolor=black,
-    filecolor=black,
-    urlcolor=blue,
-    citecolor=black,
+    colorlinks=true,
+    linkcolor=aaublue,
+    filecolor=aaublue,
+    urlcolor=aaulight,
+    citecolor=aaublue,
     pdftitle={Agile Software Engineering - Exam Assignment},
     pdfauthor={Your Name},
     bookmarks=true,
@@ -50,40 +59,59 @@
     pdfpagemode=UseOutlines,
 }
 
-% Bibliography with BibLaTeX
-\usepackage[style=authoryear,backend=biber,sorting=nty]{biblatex}
+% Bibliography with BibLaTeX - AUTHOR-YEAR STYLE
+\usepackage[style=authoryear,backend=biber,sorting=nyt,maxcitenames=2]{biblatex}
 \addbibresource{references.bib}
 
 % Table of contents depth
-\setcounter{tocdepth}{3}
+\setcounter{tocdepth}{2}
 \setcounter{secnumdepth}{3}
+
+% Headers and footers - MINIMAL EDITORIAL STYLE
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\small\textit{\nouppercase{\leftmark}}}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% First page of chapters - no header
+\fancypagestyle{plain}{
+  \fancyhf{}
+  \fancyfoot[C]{\small\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+}
 
 % Code listings
 \usepackage{listings}
 % JavaScript definition
 \lstdefinelanguage{JavaScript}{
     keywords={get, typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break, const, let, use, express, static, join, require, asyncHandler, log},
-    keywordstyle=\color{magenta},
+    keywordstyle=\color{aaublue}\bfseries,
     ndkeywords={class, export, boolean, throw, implements, import, this, async, await},
-    ndkeywordstyle=\color{blue}\bfseries,
+    ndkeywordstyle=\color{aaulight}\bfseries,
     identifierstyle=\color{black},
     sensitive=false,
     basicstyle=\footnotesize\ttfamily,
     comment=[l]{//},
     morecomment=[s]{/*}{*/},
-    commentstyle=\color{mGreen},
+    commentstyle=\color{mGreen}\itshape,
     numberstyle=\tiny\color{mGray},
     stringstyle=\color{mPurple},
     morestring=[b]',
     morestring=[b]",
-    breaklines=true
+    breaklines=true,
+    frame=leftline,
+    framerule=2pt,
+    rulecolor=\color{aaulight}
 }
 
 % Todo notes (useful during writing)
 \usepackage{todonotes}
 
-% Caption styling
-\usepackage[font=small,labelfont=bf]{caption}
+% Caption styling - ITALIC CAPTIONS
+\usepackage[font=small,labelfont=bf,labelsep=colon,textfont=it]{caption}
 
 % Prevent text overflow
 \usepackage{microtype}
@@ -94,16 +122,49 @@
 \usepackage{url}
 
 % ============================================================================
+% SECTION STYLING - EDITORIAL/MAGAZINE STYLE
+% ============================================================================
+\usepackage{titlesec}
+
+% Chapter style - large number with underline accent
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries}
+  {\flushright\fontsize{72}{72}\selectfont\color{aausilver}\thechapter}
+  {10pt}
+  {\titlerule[2pt]\vspace{6pt}\huge\sffamily\color{aaublue}}
+\titlespacing*{\chapter}{0pt}{20pt}{20pt}
+
+% Section style - clean with left accent bar
+\titleformat{\section}
+  {\normalfont\Large\bfseries\sffamily\color{aaublue}}
+  {\thesection}{1em}{}
+  [{\titlerule[0.8pt]}]
+
+% Subsection style - italic accent
+\titleformat{\subsection}
+  {\normalfont\large\bfseries\color{aaugray}}
+  {\thesubsection}{1em}{}
+
+% Subsubsection style
+\titleformat{\subsubsection}
+  {\normalfont\normalsize\itshape\color{aaugray}}
+  {\thesubsubsection}{1em}{}
+
+% Typography settings - traditional paragraph style
+\setlength\parindent{1.5em}
+\setlength\parskip{0pt}
+
+% ============================================================================
 % DOCUMENT METADATA - EDIT THIS SECTION
 % ============================================================================
 \title{Agile Software Engineering}
-\author{Your Name Here}
-\studentnumber{20XXXXXX}
-\studentemail{xxxx@student.aau.dk}
+\author{Jawad Mehmood Khan Qayyum}
+\studentnumber{20233947}
+\studentemail{jqayyu23@student.aau.dk}
 
-\intervieweename{Interviewee Name}
-\intervieweecompany{Company Name}
-\intervieweeemail{interviewee@company.com}
+\intervieweename{Ahmed Sadiq}
+\intervieweecompany{Djøf Trade Union}
+\intervieweeemail{Asq@djoef.dk}
 
 \projectperiod{2025}
 \coursename{Agile Software Engineering}
@@ -138,19 +199,8 @@ Through systematic analysis of interview data and theoretical frameworks, this r
 \tableofcontents
 \clearpage
 
-% Optional: List of Figures
-% \listoffigures
-% \clearpage
-
-% Optional: List of Tables
-% \listoftables
-% \clearpage
-
 % Main content (Arabic numerals for page numbers)
 \mainmatter
-
-% Remove paragraph indentation (optional, for modern look)
-\setlength\parindent{0pt}
 
 % ============================================================================
 % CHAPTERS - Include your chapter files here
@@ -170,7 +220,8 @@ Through systematic analysis of interview data and theoretical frameworks, this r
 % ============================================================================
 \cleardoublepage
 \phantomsection
-\addcontentsline{toc}{chapter}{Bibliography}
+% Include all bibliography entries even if not cited
+\nocite{*}
 \printbibliography[heading=bibintoc,title={Bibliography}]
 
 % ============================================================================

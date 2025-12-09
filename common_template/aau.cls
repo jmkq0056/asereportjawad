@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{aau_v2}[2025/12/09 AAU Report Class - Editorial Design]
+\ProvidesClass{aau}[2025/12/09 AAU Report Class - Editorial Design]
 
 \LoadClassWithOptions{report}
 
@@ -106,17 +106,12 @@
       STUDENT
     };
     
-    \node[anchor=north west, text=white, font=\normalsize\sffamily, text width=4.5cm] 
+    \node[anchor=north west, text=white, font=\normalsize\sffamily, text width=4.5cm]
       at ($(current page.north west)+(1cm,-6.2cm)$) {
       \textbf{\@author}\\[6pt]
       {\small\faIdCard\hspace{0.2cm}\@studentnumber}\\[3pt]
       {\small\faEnvelope\hspace{0.2cm}\@studentemail}
     };
-
-    % Separator line
-    \draw[aaulight, line width=1pt] 
-      ($(current page.north west)+(1cm,-9cm)$) -- 
-      ($(current page.north west)+(5cm,-9cm)$);
 
     % ---------- INTERVIEWEE INFO (in sidebar) ----------
     \node[anchor=north west, text=aaulight, font=\small\bfseries\sffamily] 

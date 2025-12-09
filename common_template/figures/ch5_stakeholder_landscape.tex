@@ -1,0 +1,35 @@
+% Figure: Stakeholder Landscape
+% Simple narrative showing two stakeholder groups and Product Owner bridge
+
+\begin{figure}[htbp]
+    \centering
+    \begin{tikzpicture}[
+        stakeholder/.style={rectangle, draw, fill=blue!15, text width=2.5cm, align=center, minimum height=1cm, font=\small},
+        po/.style={rectangle, draw, fill=green!25, text width=2.5cm, align=center, minimum height=1cm, font=\small\bfseries},
+        team/.style={rectangle, draw, fill=orange!20, text width=2.5cm, align=center, minimum height=1cm, font=\small},
+        arrow/.style={<->, >=stealth, thick}
+    ]
+
+    % Top section - Stakeholder groups
+    \node[stakeholder] (internal) at (0,3.5) {Internal\\Employees};
+    \node[stakeholder] (members) at (5,3.5) {Union\\Members};
+
+    % Middle - Product Owner (the bridge)
+    \node[po] (po) at (2.5,1.8) {Product Owner\\(Bridge)};
+
+    % Bottom - Development Team
+    \node[team] (team) at (2.5,0) {Development\\Team};
+
+    % Arrows showing flow
+    \draw[arrow, blue] (internal) -- (po);
+    \draw[arrow, blue] (members) -- (po);
+    \draw[arrow, green!60!black] (po) -- (team);
+
+    % Labels
+    \node[above=0.1cm of po, font=\scriptsize, text width=2cm, align=center] {Gathers needs\\Translates context};
+    \node[right=0.3cm of team, font=\scriptsize, text width=2cm, align=left] {Receives\\prioritized\\backlog};
+
+    \end{tikzpicture}
+    \caption{Stakeholder landscape showing two groups served by Ahmed's organization. The Product Owner bridges stakeholder groups and the development team, gathering needs from both internal employees and union members, then translating them into prioritized backlog items.}
+    \label{fig:jawad-stakeholder-landscape}
+\end{figure}

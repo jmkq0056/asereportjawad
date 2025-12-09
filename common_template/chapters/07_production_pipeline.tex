@@ -1,25 +1,33 @@
-\chapter{Production Pipeline and Future Recommendations}
+\chapter{Deployment Practices and System Observability}
 \label{ch:production-pipeline}
 
-\section{Pipeline Evaluation}
-\label{sec:pipeline-evaluation}
+Djøf Trade Union's deployment pipeline functions reliably but reveals opportunities for improvement. They manually approve each deployment stage, tests sometimes fail unpredictably, and monitoring gaps delay problem detection \textbf{(Transcript: 00:37:52)}.
 
-% Your content here
+\section{Current Pipeline and Monitoring Assessment}
+\label{sec:current-pipeline}
 
+Their current pipeline moves code through dev, test, and production environments \textbf{(Transcript: 00:31:37--00:32:07)}. Automated builds run unit tests, integration tests, and static analysis. However, deployment requires manual approval at each stage \textbf{(Transcript: 00:34:07--00:34:37)}.
 
-\section{Recommendations}
-\label{sec:recommendations}
+Tests occasionally fail without reason and require reruns \textbf{(Transcript: 00:37:52)}. This instability wastes developer time and erodes confidence in test results. When tests fail randomly, they can't distinguish real problems from false alarms.
 
-% Your content here
+\input{figures/ch7_pipeline_comparison}
 
+Monitoring relies on SMS alerts for critical failures \textbf{(Transcript: 00:36:37)}. If problems occur overnight, the team discovers them the next morning. Limited logging makes root cause analysis difficult \textbf{(Transcript: 00:37:52--00:38:22)}.
 
-\section{Long-Term Strategies}
-\label{sec:long-term-strategies}
+The most impactful improvement would be comprehensive logging and monitoring \textbf{(Transcript: 00:38:37)}. Detailed logs capture system behavior. Proactive alerts detect anomalies before they escalate. This reduces response time and prevents user impact.
 
-% Your content here
+\section{Test Stability Improvements}
+\label{sec:test-stability}
 
+Stabilizing tests eliminates false failures. Isolating test data, managing test dependencies, and identifying flaky tests creates reliable automation. When teams trust their tests, they deploy confidently.
 
-\section{Future Work}
-\label{sec:future-work}
+Gradually reducing manual approvals accelerates deployment. Feature flags enable safe production releases without manual gates. Teams can toggle features independently from deployment.
 
-% Your content here
+\section{Building Deployment Capabilities}
+\label{sec:deployment-capabilities}
+
+Enhanced observability transforms operations. Distributed tracing reveals request flows across services. Centralized logging aggregates data for analysis. Custom dashboards surface critical metrics in real time.
+
+Improving deployment frequency builds organizational capability. More frequent deployments reduce batch size, making problems easier to diagnose and fixes faster to deploy.
+
+Investing in test infrastructure pays dividends. Container-based test environments ensure consistency. Parallel test execution reduces feedback time. Regular test suite maintenance removes obsolete tests.
