@@ -1,0 +1,47 @@
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Recognizing Development Challenges}{2}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Key Challenges}{2}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Problem Analysis}{3}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Root Causes and Readiness for Change}{4}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Adopting Agile Methodologies}{6}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Establishing Product Backlog Refinement}{6}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Introducing Scrum Roles and Sprint Structure}{7}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Building Collaboration and Transparency}{8}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Addressing Change Resistance}{9}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Measuring Team Progress and Adaptation}{10}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Sprint Reviews and Stakeholder Engagement}{10}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Retrospectives and Process Refinement}{11}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Tracking Metrics and Leadership Support}{11}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Understanding Stakeholder Voices}{13}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Stakeholder Identification and Collaboration}{13}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Managing Competing Interests and Communication}{14}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Maintaining Software Quality}{16}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Automated Testing and Code Reviews}{16}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Legacy Systems and Feedback Integration}{16}{section.6.2}%
+\contentsline {chapter}{\numberline {7}Deployment Practices and System Observability}{18}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Current Pipeline and Monitoring Assessment}{18}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Test Stability Improvements}{19}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Building Deployment Capabilities}{19}{section.7.3}%
+\contentsline {chapter}{\numberline {8}Conclusion}{20}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Emerging Challenges}{20}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Future Development}{21}{section.8.2}%
+\contentsline {chapter}{Bibliography}{22}{chapter*.11}%
+\contentsline {chapter}{\numberline {A}Interview Questions}{24}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Welcome and Introduction}{24}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Project Experiences}{24}{section.A.2}%
+\contentsline {section}{\numberline {A.3}Work Methods and Daily Practice}{25}{section.A.3}%
+\contentsline {section}{\numberline {A.4}The Team and Collaboration}{25}{section.A.4}%
+\contentsline {section}{\numberline {A.5}Measurement and Continuous Improvement}{25}{section.A.5}%
+\contentsline {section}{\numberline {A.6}Quality and Testing}{26}{section.A.6}%
+\contentsline {section}{\numberline {A.7}AI in Development}{26}{section.A.7}%
+\contentsline {section}{\numberline {A.8}CI/CD and Technical Setup}{26}{section.A.8}%
+\contentsline {section}{\numberline {A.9}Stakeholders}{26}{section.A.9}%
+\contentsline {section}{\numberline {A.10}Closing}{27}{section.A.10}%
+\contentsline {chapter}{\numberline {B}Interview Transcript}{28}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Thematic Analysis of Interview Data}{39}{appendix.C}%
+\contentsline {section}{\numberline {C.1}Familiarization and Initial Observations}{39}{section.C.1}%
+\contentsline {section}{\numberline {C.2}Coding Process}{39}{section.C.2}%
+\contentsline {section}{\numberline {C.3}Theme Construction}{40}{section.C.3}%
+\contentsline {section}{\numberline {C.4}Theme Relationships}{41}{section.C.4}%
+\contentsline {section}{\numberline {C.5}Summary}{42}{section.C.5}%

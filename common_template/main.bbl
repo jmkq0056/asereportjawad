@@ -1,0 +1,428 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{state_of_agile}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3e0291016abce939e9fb57850ca01218}{%
+           family={{Digital.ai}},
+           familyi={D\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Digital.ai}%
+      }
+      \strng{namehash}{3e0291016abce939e9fb57850ca01218}
+      \strng{fullhash}{3e0291016abce939e9fb57850ca01218}
+      \strng{fullhashraw}{3e0291016abce939e9fb57850ca01218}
+      \strng{bibnamehash}{3e0291016abce939e9fb57850ca01218}
+      \strng{authorbibnamehash}{3e0291016abce939e9fb57850ca01218}
+      \strng{authornamehash}{3e0291016abce939e9fb57850ca01218}
+      \strng{authorfullhash}{3e0291016abce939e9fb57850ca01218}
+      \strng{authorfullhashraw}{3e0291016abce939e9fb57850ca01218}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Annual industry survey on Agile adoption and practices}
+      \field{title}{State of Agile Report}
+      \field{type}{techreport}
+      \field{year}{2024}
+      \true{nocite}
+    \endentry
+    \entry{rogers2024stakeholders}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2f81f16acd294fea7d91288184910708}{%
+           family={Rogers},
+           familyi={R\bibinitperiod},
+           given={Philip},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2f81f16acd294fea7d91288184910708}
+      \strng{fullhash}{2f81f16acd294fea7d91288184910708}
+      \strng{fullhashraw}{2f81f16acd294fea7d91288184910708}
+      \strng{bibnamehash}{2f81f16acd294fea7d91288184910708}
+      \strng{authorbibnamehash}{2f81f16acd294fea7d91288184910708}
+      \strng{authornamehash}{2f81f16acd294fea7d91288184910708}
+      \strng{authorfullhash}{2f81f16acd294fea7d91288184910708}
+      \strng{authorfullhashraw}{2f81f16acd294fea7d91288184910708}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Medium - A Path Less Taken}
+      \field{month}{2}
+      \field{note}{Describes usage of the 2x2 Stakeholder Matrix technique for Agile projects}
+      \field{title}{Identifying and Engaging Stakeholders}
+      \field{year}{2024}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://medium.com/agile-outside-the-box/identifying-and-engaging-stakeholders-c16c6557317d
+      \endverb
+      \verb{url}
+      \verb https://medium.com/agile-outside-the-box/identifying-and-engaging-stakeholders-c16c6557317d
+      \endverb
+    \endentry
+    \entry{russo2021agile}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=6cd1fc5cc33fef507f455f564944f1bc}{%
+           family={Russo},
+           familyi={R\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6cd1fc5cc33fef507f455f564944f1bc}
+      \strng{fullhash}{6cd1fc5cc33fef507f455f564944f1bc}
+      \strng{fullhashraw}{6cd1fc5cc33fef507f455f564944f1bc}
+      \strng{bibnamehash}{6cd1fc5cc33fef507f455f564944f1bc}
+      \strng{authorbibnamehash}{6cd1fc5cc33fef507f455f564944f1bc}
+      \strng{authornamehash}{6cd1fc5cc33fef507f455f564944f1bc}
+      \strng{authorfullhash}{6cd1fc5cc33fef507f455f564944f1bc}
+      \strng{authorfullhashraw}{6cd1fc5cc33fef507f455f564944f1bc}
+      \field{extraname}{1}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACM Transactions on Software Engineering and Methodology}
+      \field{note}{Study examining success factors for Agile transformations, finding developer skills and management support as most critical factors}
+      \field{title}{The Agile Success Model: A Mixed-Methods Study of a Large-Scale Agile Transformation}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://dl.acm.org/doi/10.1145/3571849
+      \endverb
+      \verb{url}
+      \verb https://dl.acm.org/doi/10.1145/3571849
+      \endverb
+    \endentry
+    \entry{russo_lecture3_2025}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=6cd1fc5cc33fef507f455f564944f1bc}{%
+           family={Russo},
+           familyi={R\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Aalborg University Copenhagen}%
+      }
+      \strng{namehash}{6cd1fc5cc33fef507f455f564944f1bc}
+      \strng{fullhash}{6cd1fc5cc33fef507f455f564944f1bc}
+      \strng{fullhashraw}{6cd1fc5cc33fef507f455f564944f1bc}
+      \strng{bibnamehash}{6cd1fc5cc33fef507f455f564944f1bc}
+      \strng{authorbibnamehash}{6cd1fc5cc33fef507f455f564944f1bc}
+      \strng{authornamehash}{6cd1fc5cc33fef507f455f564944f1bc}
+      \strng{authorfullhash}{6cd1fc5cc33fef507f455f564944f1bc}
+      \strng{authorfullhashraw}{6cd1fc5cc33fef507f455f564944f1bc}
+      \field{extraname}{2}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Course lecture slides}
+      \field{note}{Topics: Scrum roles, events, values, empiricism, responsiveness, stakeholder concern, team effectiveness, continuous improvement, team autonomy}
+      \field{title}{ASE Lecture 3: The Scrum Framework}
+      \field{year}{2025}
+      \true{nocite}
+    \endentry
+    \entry{russo_lecture5_2025}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=6cd1fc5cc33fef507f455f564944f1bc}{%
+           family={Russo},
+           familyi={R\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Aalborg University Copenhagen}%
+      }
+      \strng{namehash}{6cd1fc5cc33fef507f455f564944f1bc}
+      \strng{fullhash}{6cd1fc5cc33fef507f455f564944f1bc}
+      \strng{fullhashraw}{6cd1fc5cc33fef507f455f564944f1bc}
+      \strng{bibnamehash}{6cd1fc5cc33fef507f455f564944f1bc}
+      \strng{authorbibnamehash}{6cd1fc5cc33fef507f455f564944f1bc}
+      \strng{authornamehash}{6cd1fc5cc33fef507f455f564944f1bc}
+      \strng{authorfullhash}{6cd1fc5cc33fef507f455f564944f1bc}
+      \strng{authorfullhashraw}{6cd1fc5cc33fef507f455f564944f1bc}
+      \field{extraname}{3}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Course lecture slides}
+      \field{note}{Topics: Product Backlog refinement, User Stories, Acceptance Criteria, Definition of Done, risk management}
+      \field{title}{ASE Lecture 5: Requirements, Done \& Risk Management}
+      \field{year}{2025}
+      \true{nocite}
+    \endentry
+    \entry{interview_developer_2025}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=df4267bedeb80650086568f75019cb81}{%
+           family={Sadiq},
+           familyi={S\bibinitperiod},
+           given={Ahmed},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{df4267bedeb80650086568f75019cb81}
+      \strng{fullhash}{df4267bedeb80650086568f75019cb81}
+      \strng{fullhashraw}{df4267bedeb80650086568f75019cb81}
+      \strng{bibnamehash}{df4267bedeb80650086568f75019cb81}
+      \strng{authorbibnamehash}{df4267bedeb80650086568f75019cb81}
+      \strng{authornamehash}{df4267bedeb80650086568f75019cb81}
+      \strng{authorfullhash}{df4267bedeb80650086568f75019cb81}
+      \strng{authorfullhashraw}{df4267bedeb80650086568f75019cb81}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Personal interview conducted by Jawad}
+      \field{month}{Fall}
+      \field{note}{Trade union organization (internal development department). 10-12 years of experience. Interview conducted in Danish, transcript available in Appendix.}
+      \field{title}{Interview with Ahmed Sadiq - Experienced Software Developer}
+      \field{year}{2025}
+      \true{nocite}
+    \endentry
+    \entry{schwaber2020scrum}{book}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=ee6f08fcba839e09471a0bc69152b6a5}{%
+           family={Schwaber},
+           familyi={S\bibinitperiod},
+           given={Ken},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6e3f26f6f816a26c6ab36bc7a899bcde}{%
+           family={Sutherland},
+           familyi={S\bibinitperiod},
+           given={Jeff},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Scrum.org}%
+      }
+      \strng{namehash}{303ea1dc92fd8c772eac56316b2074ef}
+      \strng{fullhash}{303ea1dc92fd8c772eac56316b2074ef}
+      \strng{fullhashraw}{303ea1dc92fd8c772eac56316b2074ef}
+      \strng{bibnamehash}{303ea1dc92fd8c772eac56316b2074ef}
+      \strng{authorbibnamehash}{303ea1dc92fd8c772eac56316b2074ef}
+      \strng{authornamehash}{303ea1dc92fd8c772eac56316b2074ef}
+      \strng{authorfullhash}{303ea1dc92fd8c772eac56316b2074ef}
+      \strng{authorfullhashraw}{303ea1dc92fd8c772eac56316b2074ef}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{11}
+      \field{title}{The Scrum Guide: The Definitive Guide to Scrum: The Rules of the Game}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://scrumguides.org/
+      \endverb
+      \verb{url}
+      \verb https://scrumguides.org/
+      \endverb
+    \endentry
+    \entry{liberators_scrum}{misc}{}{}
+      \name{author}{3}{ul=2}{%
+        {{un=0,uniquepart=base,hash=1380906eb807dc470aafe764ef90ebed}{%
+           family={Verwijs},
+           familyi={V\bibinitperiod},
+           given={Christiaan},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c22d9b0b8262662a0c39bcafd50f05f5}{%
+           family={Overeem},
+           familyi={O\bibinitperiod},
+           given={Barry},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2c4a57c7ea71dd0ef5dab1538c26b7a4}{%
+           family={Schartau},
+           familyi={S\bibinitperiod},
+           given={Johannes},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7d0cb1ad633be7a73a70a9454f1ae6bd}
+      \strng{fullhash}{c6ad582388821558b8dcfb7ef886141e}
+      \strng{fullhashraw}{c6ad582388821558b8dcfb7ef886141e}
+      \strng{bibnamehash}{c6ad582388821558b8dcfb7ef886141e}
+      \strng{authorbibnamehash}{c6ad582388821558b8dcfb7ef886141e}
+      \strng{authornamehash}{7d0cb1ad633be7a73a70a9454f1ae6bd}
+      \strng{authorfullhash}{c6ad582388821558b8dcfb7ef886141e}
+      \strng{authorfullhashraw}{c6ad582388821558b8dcfb7ef886141e}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{The Liberators on Medium}
+      \field{note}{Practical guide explaining Scrum framework from empirical process control perspective}
+      \field{title}{Scrum: A Framework to Reduce Risk and Deliver Value Sooner}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://medium.com/the-liberators/scrum-a-framework-to-reduce-risk-and-deliver-value-sooner-c49fa80902e7
+      \endverb
+      \verb{url}
+      \verb https://medium.com/the-liberators/scrum-a-framework-to-reduce-risk-and-deliver-value-sooner-c49fa80902e7
+      \endverb
+    \endentry
+    \entry{verwijs2021scrum}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=1380906eb807dc470aafe764ef90ebed}{%
+           family={Verwijs},
+           familyi={V\bibinitperiod},
+           given={Christiaan},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6cd1fc5cc33fef507f455f564944f1bc}{%
+           family={Russo},
+           familyi={R\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6dc7413edab8f73fcbe5e2d6511b59ba}
+      \strng{fullhash}{6dc7413edab8f73fcbe5e2d6511b59ba}
+      \strng{fullhashraw}{6dc7413edab8f73fcbe5e2d6511b59ba}
+      \strng{bibnamehash}{6dc7413edab8f73fcbe5e2d6511b59ba}
+      \strng{authorbibnamehash}{6dc7413edab8f73fcbe5e2d6511b59ba}
+      \strng{authornamehash}{6dc7413edab8f73fcbe5e2d6511b59ba}
+      \strng{authorfullhash}{6dc7413edab8f73fcbe5e2d6511b59ba}
+      \strng{authorfullhashraw}{6dc7413edab8f73fcbe5e2d6511b59ba}
+      \field{extraname}{1}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACM Transactions on Software Engineering and Methodology}
+      \field{note}{Research based on data from 1,978 Scrum teams examining factors of team effectiveness}
+      \field{title}{A Theory of Scrum Team Effectiveness}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://dl.acm.org/doi/10.1145/3571849
+      \endverb
+      \verb{url}
+      \verb https://dl.acm.org/doi/10.1145/3571849
+      \endverb
+    \endentry
+    \entry{verwijs2022effective}{misc}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=1380906eb807dc470aafe764ef90ebed}{%
+           family={Verwijs},
+           familyi={V\bibinitperiod},
+           given={Christiaan},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6cd1fc5cc33fef507f455f564944f1bc}{%
+           family={Russo},
+           familyi={R\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6dc7413edab8f73fcbe5e2d6511b59ba}
+      \strng{fullhash}{6dc7413edab8f73fcbe5e2d6511b59ba}
+      \strng{fullhashraw}{6dc7413edab8f73fcbe5e2d6511b59ba}
+      \strng{bibnamehash}{6dc7413edab8f73fcbe5e2d6511b59ba}
+      \strng{authorbibnamehash}{6dc7413edab8f73fcbe5e2d6511b59ba}
+      \strng{authornamehash}{6dc7413edab8f73fcbe5e2d6511b59ba}
+      \strng{authorfullhash}{6dc7413edab8f73fcbe5e2d6511b59ba}
+      \strng{authorfullhashraw}{6dc7413edab8f73fcbe5e2d6511b59ba}
+      \field{extraname}{2}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{The Liberators on Medium}
+      \field{month}{5}
+      \field{note}{Non-technical version explaining 5 core factors and 13 sub-factors for team effectiveness from research with 2,000 Scrum teams}
+      \field{title}{In-Depth: What Makes Scrum Teams Effective?}
+      \field{year}{2022}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://medium.com/the-liberators/what-makes-scrum-teams-effective-7ca9f56a82c7
+      \endverb
+      \verb{url}
+      \verb https://medium.com/the-liberators/what-makes-scrum-teams-effective-7ca9f56a82c7
+      \endverb
+    \endentry
+    \entry{liberators2023workshops}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=aeea9d91a438b90e1e4232de9ccefae6}{%
+           family={{Zombie Scrum Resistance}},
+           familyi={Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{aeea9d91a438b90e1e4232de9ccefae6}
+      \strng{fullhash}{aeea9d91a438b90e1e4232de9ccefae6}
+      \strng{fullhashraw}{aeea9d91a438b90e1e4232de9ccefae6}
+      \strng{bibnamehash}{aeea9d91a438b90e1e4232de9ccefae6}
+      \strng{authorbibnamehash}{aeea9d91a438b90e1e4232de9ccefae6}
+      \strng{authornamehash}{aeea9d91a438b90e1e4232de9ccefae6}
+      \strng{authorfullhash}{aeea9d91a438b90e1e4232de9ccefae6}
+      \strng{authorfullhashraw}{aeea9d91a438b90e1e4232de9ccefae6}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{The Liberators on Medium}
+      \field{month}{2}
+      \field{note}{Practical workshops using Liberating Structures for Sprint Reviews, Product Backlog refinement, and stakeholder involvement}
+      \field{title}{8 Workshops To Involve Your Stakeholders And Deliver More Value Sooner}
+      \field{year}{2023}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://medium.com/the-liberators/8-workshops-to-involve-your-stakeholders-and-deliver-more-value-sooner-78d07a94efcd
+      \endverb
+      \verb{url}
+      \verb https://medium.com/the-liberators/8-workshops-to-involve-your-stakeholders-and-deliver-more-value-sooner-78d07a94efcd
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
