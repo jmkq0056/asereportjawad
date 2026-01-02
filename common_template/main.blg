@@ -1,21 +1,21 @@
 [0] Config.pm:308> INFO - This is Biber 2.20
 [0] Config.pm:311> INFO - Logfile is 'main.blg'
-[27] biber-darwin:340> INFO - === Fri Jan  2, 2026, 09:34:01
-[36] Biber.pm:420> INFO - Reading 'main.bcf'
-[64] Biber.pm:991> INFO - Using all citekeys in bib section 0
-[74] Biber.pm:4463> INFO - Processing section 0
-[78] Biber.pm:4654> INFO - Looking for bibtex file 'references.bib' for section 0
-[79] bibtex.pm:1713> INFO - LaTeX decoding ...
-[82] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
-[110] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[110] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[110] Biber.pm:4283> INFO - Sorting list 'nyt/global//global/global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[110] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
-[116] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[117] bbl.pm:779> INFO - Output to main.bbl
-[118] Biber.pm:131> WARN - legacy month field 'February' in entry 'rogers2024stakeholders' is not an integer - this will probably not sort properly.
-[118] Biber.pm:131> WARN - legacy month field 'May' in entry 'verwijs2022effective' is not an integer - this will probably not sort properly.
-[118] Biber.pm:131> WARN - legacy month field 'February' in entry 'liberators2023workshops' is not an integer - this will probably not sort properly.
-[118] Biber.pm:131> WARN - legacy month field 'Fall' in entry 'interview_developer_2025' is not an integer - this will probably not sort properly.
-[118] Biber.pm:131> WARN - legacy month field 'November' in entry 'schwaber2020scrum' is not an integer - this will probably not sort properly.
-[118] Biber.pm:133> INFO - WARNINGS: 5
+[22] biber-darwin:340> INFO - === Fri Jan  2, 2026, 09:38:51
+[27] Biber.pm:420> INFO - Reading 'main.bcf'
+[51] Biber.pm:991> INFO - Using all citekeys in bib section 0
+[56] Biber.pm:4463> INFO - Processing section 0
+[59] Biber.pm:4654> INFO - Looking for bibtex file 'references.bib' for section 0
+[60] bibtex.pm:1713> INFO - LaTeX decoding ...
+[63] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
+[90] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[90] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[90] Biber.pm:4283> INFO - Sorting list 'nyt/global//global/global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[90] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
+[95] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[97] bbl.pm:779> INFO - Output to main.bbl
+[97] Biber.pm:131> WARN - legacy month field 'November' in entry 'schwaber2020scrum' is not an integer - this will probably not sort properly.
+[97] Biber.pm:131> WARN - legacy month field 'February' in entry 'liberators2023workshops' is not an integer - this will probably not sort properly.
+[97] Biber.pm:131> WARN - legacy month field 'Fall' in entry 'interview_developer_2025' is not an integer - this will probably not sort properly.
+[97] Biber.pm:131> WARN - legacy month field 'May' in entry 'verwijs2022effective' is not an integer - this will probably not sort properly.
+[97] Biber.pm:131> WARN - legacy month field 'February' in entry 'rogers2024stakeholders' is not an integer - this will probably not sort properly.
+[97] Biber.pm:133> INFO - WARNINGS: 5
