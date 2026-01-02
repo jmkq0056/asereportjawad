@@ -1,35 +1,35 @@
 \chapter{Recognizing Development Challenges}
 \label{ch:problem-identification}
 
-Before Djøf Trade Union adopted Scrum, their development team faced significant challenges that hindered their ability to deliver value efficiently. Understanding these problems is essential to appreciate why they chose Agile practices and how those practices addressed their specific needs. The Scrum framework emphasizes that transparency enables inspection and adaptation \textit{\parencite{schwaber2020scrum}}, but achieving transparency first requires identifying what is unclear. Empirical evidence demonstrates that teams struggle most when organizational blockers around stakeholder alignment, feedback loops, and continuous learning remain unaddressed \textit{\parencite{verwijs2021scrum}}.
+Before Djøf Trade Union adopted Scrum, their development team faced challenges that hindered value delivery. Understanding these problems explains why they chose Agile practices. The Scrum framework emphasizes that transparency enables inspection and adaptation \textit{\parencite{schwaber2020scrum}}, but achieving transparency first requires identifying what is unclear. Empirical evidence demonstrates that teams struggle when organizational blockers around stakeholder alignment and continuous learning remain unaddressed \textit{\parencite{verwijs2021scrum}}.
 
 \section{Key Challenges}
 \label{sec:key-challenges}
 
-Djøf Trade Union faced a fundamental problem with how work arrived and was prioritized. Tasks would emerge ad-hoc without clear consideration for team capacity or strategic importance, creating an environment where developers constantly reacted to incoming requests rather than working proactively toward meaningful goals.
+Djøf Trade Union faced problems with how work arrived and was prioritized. Tasks emerged without consideration for capacity or strategic importance, creating an environment where developers constantly reacted rather than working proactively.
 
-The situation became particularly problematic when dealing with legacy systems. Ahmed described a project where he was asked to add a simple checkbox to the member registration system for union unemployment insurance sign-up \textbf{(Transcript: 00:02:23--00:02:34)}. The legacy membership system had security restrictions that prevented making changes without being logged in as an actual member, and creating test members was not permitted for data protection reasons \textbf{(Transcript: 00:03:04--00:03:33)}. He spent two weeks to a month working on this task, only to have it completely abandoned \textbf{(Transcript: 00:04:32--00:04:48)}.
+Legacy systems made this worse. Ahmed was asked to add a checkbox to the member registration system \textbf{(Transcript: 00:02:23)}. The legacy system had security restrictions preventing changes without logging in as an actual member, and creating test members was not permitted \textbf{(Transcript: 00:03:04)}. He spent weeks on this task, only to have it abandoned \textbf{(Transcript: 00:04:32)}.
 
-The task should never have reached Ahmed in the first place. It needed approval from the legal department regarding GDPR compliance and coordination with the third-party vendor who controlled the membership system's security settings \textbf{(Transcript: 00:04:48--00:05:17)}. There was no gate-keeping process to ensure that tasks were actually achievable within existing constraints before developers invested time in them. This pattern repeated itself across various projects. Developers would receive assignments that looked simple on the surface but contained hidden dependencies, unclear stakeholder expectations, or technical constraints that had not been discovered.
+The task needed legal approval and vendor coordination first \textbf{(Transcript: 00:04:48)}. No gatekeeping process ensured tasks were achievable before developers invested time. This pattern repeated: assignments looked simple but contained hidden dependencies or technical constraints.
 
 \input{figures/ch2_problem_workflow}
 
 \section{Problem Analysis}
 \label{sec:problem-analysis}
 
-The core issue was the absence of structured processes to connect business needs with development capacity. When the business side wanted something built, there was no intermediary to translate those desires into well-defined, technically feasible requirements. Business stakeholders assumed their requests were feasible. Developers accepted tasks without fully understanding the business context or questioning whether all necessary approvals were in place. Both sides operated with incomplete information.
+The core issue was absence of structured processes connecting business needs with development capacity. No intermediary translated requests into feasible requirements. Business stakeholders assumed requests were feasible; developers accepted tasks without understanding context. Both operated with incomplete information.
 
-Without a clear backlog or product owner role, everything seemed equally urgent. There was no mechanism to evaluate trade-offs or make conscious decisions about what should be done first based on business value and technical dependencies. Ahmed's team also struggled with legacy code maintenance: systems built years earlier by developers no longer with the company, with sparse documentation \textbf{(Transcript: 00:16:07--00:16:37)}. This hidden complexity was rarely accounted for when estimating work.
+Without a backlog or product owner, everything seemed equally urgent. No mechanism evaluated tradeoffs based on value and dependencies. Legacy code maintenance added complexity: systems built by departed developers with sparse documentation \textbf{(Transcript: 00:16:07)}.
 
 \section{Root Causes and Readiness for Change}
 \label{sec:root-cause}
 
-The fundamental problem was the absence of empirical process control. Djøf Trade Union made decisions based on assumptions rather than validated information. None of these assumptions were regularly tested against reality until it was too late. Teams didn't have regular checkpoints to demonstrate what had been built and gather feedback. There were no retrospectives where teams could reflect on what went wrong and agree on changes to prevent similar issues in the future.
+The fundamental problem was absence of empirical process control. Decisions relied on assumptions rather than validated information. Teams had no checkpoints to demonstrate work or gather feedback. No retrospectives existed for reflection.
 
 \input{figures/ch2_wasted_effort_cycle}
 
-Part of the root cause was also the absence of dedicated roles with clear accountability. No one owned the product backlog or facilitated the development process. They also lacked transparency into their capacity and work in progress. Without a visible backlog or sprint board, stakeholders couldn't see what the team was working on, creating frustration on both sides.
+No one owned the product backlog or facilitated development. Without visible backlogs, stakeholders could not see team work, creating frustration.
 
-Finally, there was insufficient management support for changing how work was done. Research on Agile transformations demonstrates that management support is the second most critical success factor, creating conditions that enable developer effectiveness and continuous improvement to flourish \textit{\parencite{russo2021agile}}. Without executive buy-in and resources dedicated to process improvement, teams had little leverage to push for changes.
+Management support was insufficient. Research demonstrates that management support is the second most critical success factor for Agile transformations \textit{\parencite{russo2021agile}}. Without executive support, teams had little leverage for change.
 
-These root causes (lack of empirical process control, absence of defined roles, insufficient transparency, and limited management support) combined to create an environment where software development was chaotic and unpredictable. However, recognizing these problems created readiness for change. Failed projects like the membership checkbox task made the costs of their current approach visible to stakeholders. This awareness became the catalyst for exploring structured frameworks - precisely the context that led Djøf Trade Union to explore Scrum as a potential solution.
+These root causes created chaotic, unpredictable development. However, recognizing problems created readiness for change. Failed projects made costs visible to stakeholders, catalyzing exploration of Scrum.
