@@ -63,6 +63,7 @@
 \newcommand{\@projectperiodlab}{\ifdanish Projekperiode\else Project period\fi}
 \newcommand{\@supervisorlab}{\ifdanish Vejleder\else Supervisor\fi}
 \newcommand{\@pageslab}{\ifdanish Antal Sider\else Number of pages\fi}
+\newcommand{\@appendixlab}{\ifdanish Bilag sider\else Appendix pages\fi}
 \newcommand{\@examlab}{\ifdanish EKSAMENSOPGAVE\else EXAM ASSIGNMENT\fi}
 
 % ============================================================================
@@ -240,21 +241,31 @@
     };
 
     \ifdef{\@supervisor}{
-      \node[anchor=north west, text width=.32\textwidth] (supervisors) 
+      \node[anchor=north west, text width=.32\textwidth] (supervisors)
         at ($(semester.south west)+(0,-0.6cm)$) {
         {\sffamily\color{aaulight}\@supervisorlab}\\[2pt]
         {\color{aaublue}\StrSubstitute{\@supervisor}{\and}{\\}}
       };
-      \node[anchor=north west, text width=.32\textwidth] 
+      \node[anchor=north west, text width=.32\textwidth] (numpages)
         at ($(supervisors.south west)+(0,-0.6cm)$) {
         {\sffamily\color{aaulight}\@pageslab}\\[2pt]
-        {\color{aaublue}\pageref{LastPage}}
+        {\color{aaublue}\pageref{LastMainPage}}
+      };
+      \node[anchor=north west, text width=.32\textwidth]
+        at ($(numpages.south west)+(0,-0.6cm)$) {
+        {\sffamily\color{aaulight}\@appendixlab}\\[2pt]
+        {\color{aaublue}\the\numexpr\getpagerefnumber{LastPage}-\getpagerefnumber{LastMainPage}\relax}
       };
     }{
-      \node[anchor=north west, text width=.32\textwidth] 
+      \node[anchor=north west, text width=.32\textwidth] (numpages)
         at ($(semester.south west)+(0,-0.6cm)$) {
         {\sffamily\color{aaulight}\@pageslab}\\[2pt]
-        {\color{aaublue}\pageref{LastPage}}
+        {\color{aaublue}\pageref{LastMainPage}}
+      };
+      \node[anchor=north west, text width=.32\textwidth]
+        at ($(numpages.south west)+(0,-0.6cm)$) {
+        {\sffamily\color{aaulight}\@appendixlab}\\[2pt]
+        {\color{aaublue}\the\numexpr\getpagerefnumber{LastPage}-\getpagerefnumber{LastMainPage}\relax}
       };
     }
 
